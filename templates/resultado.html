@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'home.html' %}
+{% block body %}
+
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado</title>
+</head>
+<body>
+    <center>
+    {% if resposta == 1 %}
+       <h2 class="text-primary"> CPF válido</h2>
+
+    {% else %}
+        <h2  class="text-danger">CPF  inválido</h2>
+    {% endif %}
+        </center>
+
+{% endblock %}
+</body>
+</html>
